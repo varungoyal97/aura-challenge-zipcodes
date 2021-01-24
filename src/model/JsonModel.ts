@@ -1,7 +1,7 @@
 export class JsonModel {
     public static EMPTY_JSON_MODEL = new JsonModel("", "", "", "", "", "", "", "", "", "", "", "", "");
 
-    constructor(zip: string, type: string, primary_city: string, acceptable_cities: string, unacceptable_cities: string, state: string, county: string, timezone: string, area_codes: string, latitude: string, longitude: string, country: string, estimated_population: string) {
+    constructor(zip: string, type: string, primary_city: string, acceptable_cities: string | null, unacceptable_cities: string | null, state: string, county: string, timezone: string, area_codes: string, latitude: string, longitude: string, country: string, estimated_population: string) {
         this._zip = zip;
         this._type = type;
         this._primary_city = primary_city;
@@ -47,23 +47,23 @@ export class JsonModel {
         this._primary_city = value;
     }
 
-    private _acceptable_cities: string;
+    private _acceptable_cities: string | null;
 
-    get acceptable_cities(): string {
+    get acceptable_cities(): string | null {
         return this._acceptable_cities;
     }
 
-    set acceptable_cities(value: string) {
+    set acceptable_cities(value: string | null) {
         this._acceptable_cities = value;
     }
 
-    private _unacceptable_cities: string;
+    private _unacceptable_cities: string | null;
 
-    get unacceptable_cities(): string {
+    get unacceptable_cities(): string | null {
         return this._unacceptable_cities;
     }
 
-    set unacceptable_cities(value: string) {
+    set unacceptable_cities(value: string | null) {
         this._unacceptable_cities = value;
     }
 

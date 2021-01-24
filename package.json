@@ -10,7 +10,9 @@
     "@types/aws-lambda": "^8.10.51",
     "@types/lodash": "^4.14.168",
     "@types/node": "^13.13.5",
-    "jest": "^26.0.1",
+    "jest": "^26.4.0",
+    "jest-junit": "^10.0.0",
+    "ts-jest": "^26.2.0",
     "prettier": "^1.19.1"
   },
   "dependencies": {
@@ -20,6 +22,6 @@
   },
   "scripts": {
     "format:fix": "prettier --write **/*.{js,ts,md}",
-    "test": "jest"
+    "test": "JEST_JUNIT_OUTPUT_DIR=./src/test/reports JEST_JUNIT_OUTPUT_NAME=tests.xml jest --reporters=default --reporters=jest-junit --passWithNoTests"
   }
 }
