@@ -34438,5 +34438,20 @@
     "longitude": "-73.55",
     "country": "US",
     "estimated_population": "0"
+  },
+  {
+    "zip": "069200",
+    "type": "UNIQUE",
+    "primary_city": "Stamford",
+    "acceptable_cities": null,
+    "unacceptable_cities": "International Masters Pub",
+    "state": "CT",
+    "county": "Fairfield County",
+    "timezone": "America/New_York",
+    "area_codes": "203",
+    "latitude": "42.09",
+    "longitude": "-73.55",
+    "country": "new york",
+    "estimated_population": "0"
   }
 ]

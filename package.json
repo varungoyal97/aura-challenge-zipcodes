@@ -7,10 +7,17 @@
     "npm": ">=6.0.0"
   },
   "devDependencies": {
+    "@types/aws-lambda": "^8.10.51",
+    "@types/lodash": "^4.14.168",
+    "@types/node": "^13.13.5",
     "jest": "^26.0.1",
     "prettier": "^1.19.1"
   },
-  "dependencies": {},
+  "dependencies": {
+    "typescript": "^3.8.3",
+    "fuse.js": "^6.4.6",
+    "lodash": "^4.17.20"
+  },
   "scripts": {
     "format:fix": "prettier --write **/*.{js,ts,md}",
     "test": "jest"
